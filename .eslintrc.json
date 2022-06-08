@@ -1,3 +1,57 @@
 {
-  "extends": "next/core-web-vitals"
+  "root": true,
+
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "plugins": [
+    "react",
+    "@typescript-eslint",
+    "sonarjs",
+    "import",
+    "react-hooks",
+    "simple-import-sort",
+    "jsx-a11y"
+  ],
+
+  "extends": [
+    "airbnb-typescript",
+    "plugin:@typescript-eslint/recommended",
+    "plugin:@typescript-eslint/recommended-requiring-type-checking",
+    "plugin:@typescript-eslint/strict",
+
+    // "eslint-plugin-jsx-a11y",
+    // "eslint-config-prettier",
+    // "eslint-plugin-import",
+    // "eslint-plugin-jsx-a11y",
+    // "eslint-plugin-sonarjs",
+    // "eslint-plugin-simple-import-sort",
+    // "eslint-plugin-react-hooks",
+    // "eslint-plugin-react",
+
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "next",
+    "next/core-web-vitals",
+    "airbnb",
+    "plugin:react/jsx-runtime",
+    "prettier"
+  ],
+
+  "parser": "@typescript-eslint/parser",
+
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "project": ["./tsconfig.json", "./next.config.js"]
+  },
+  "rules": {
+    "react/jsx-filename-extension": 0,
+    "react/function-component-definition": 0,
+    "react/jsx-props-no-spreading": 0
+  }
 }
