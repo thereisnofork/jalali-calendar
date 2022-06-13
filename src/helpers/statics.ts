@@ -23,4 +23,5 @@ export const weakDaysStr = [
   'جمعه',
 ];
 
+// prevent enum for reduce boundle size
 export const timeKeyWords = { now: 'now', past: 'past', future: 'future' };
