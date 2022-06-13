@@ -7,7 +7,6 @@ const DayButtonsContainer = styled.div`
   grid-column-gap: 30px;
   grid-row-gap: 15px;
   direction: rtl;
-  min-height: 300px;
 `;
 
 export { DayButtonsContainer };

@@ -10,6 +10,7 @@ const StyledDatePicker = styled.div`
   align-items: center;
   justify-content: flex-start;
   gap: 50px;
+  height: 560px; // some month having more than 5 weeks. for previous layout shifting is needed
 
   section#top {
     display: flex;
